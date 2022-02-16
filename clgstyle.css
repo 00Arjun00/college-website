@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:wght@500&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    display: flex;
+    left: 0;
+}
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:1% 3%; 
+    height: 20vh;
+    width:100%;
+}
+.container1,.container2.container3{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.sreclogo,.institutionname,.followicons,.snrlogo{
+  
+    padding:0 2%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.followicons ul li a{
+    padding:0 10px;
+}
+
+.social_url{
+    display: flex;
+    list-style:none;
+}
+
+.navbar{
+    height:11vh;
+    width:100%;
+    background:#6c2c99;
+    position: relative;
+}           
+nav{
+    display: flex;
+    align-items: center;
+    padding:30px 3%;
+}
+nav ul{
+  flex:1;
+  text-align: right;
+}
+nav ul li{
+   display: inline-block;
+   list-style:none;
+   padding:0 4%;
+}
+nav ul li a{
+   text-decoration: none;
+   font-family: 'Hammersmith One', sans-serif;
+   font-size:20px;
+   color:aliceblue;
+}
+nav ul li a:hover{
+   text-decoration: none;
+   font-family: 'Hammersmith One', sans-serif;
+   font-size:20px;
+}
+.hoverline::after{
+   text-decoration: none;
+   content: '';
+   display: block;
+   background: lavender;
+   height: 3px;
+   width: 0;
+   right: 100px;
+   transition: width 0.25s ease-in-out;
+   
+}
+.hoverline:hover::after{
+width:100%;
+ 
+}
+.clgimage{
+   position: relative;
+   text-align: center;
+}
+.center{
+   position: absolute;
+   font-size: 7vh;
+   top:25%;
+   left:10%;
+   font-family: 'Rubik', sans-serif;
+   color: lavender;
+   text-shadow: 4px 4px 0 #6c2c99 ;
+}
+.clgimgsubcls{      
+   width: 100%;
+   opacity: 0.92;
+}
+
+.aboutusinnercontainer{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding:7% 12%;
+}
+.aboutuscontainer1{
+   display: flex;
+   width:100%;
+   border-radius: 30px;
+}
+.aboutuscontainer1 img{
+   border-radius: 30px;
+   height: 32vh;
+   width:90%;
+   color: rgb(128, 66, 125);
+}
+.aboutuscontainer2inner{
+   border-top-style: solid;
+   border-bottom-style: solid;
+   padding:2% 13%;
+   border-color:orange;
+}
+.aboutuscontainer2inner p{
+   font-size: 16px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.principalheading {
+   font-size: 25px;
+   font-family: sans-serif;
+}
+#departs{
+   height:175vh;
+   width: auto;
+}
+.deptheading{
+   text-align: center;
+   justify-content: center;
+   padding:28px;
+}
+.deptheading h2{
+   font-size:32px;
+   font-family: 'Hammersmith One', sans-serif;
+   opacity: 0.8;
+}
+.deptcontainer{
+   display: flex;
+   justify-content:left;
+   background-image: url("./image/pattern.jpg");
+   height: 150vh;
+   width: auto;
+   padding-left: 20vh;
+   
+}
+.deptinnercontainer{
+
+   display: flex;
+   justify-content: center;
+   padding:15vh 0;
+}
+.departments{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   grid-auto-rows: minmax(280px,auto);
+   grid-gap:33px;
+   max-width: 960px;
+   margin:0 auto;
+}
+.dept{
+   padding:50px;
+   text-align: center;
+   background:#f7f5ff;
+   border-radius: 40px;
+   transition: 0.8s;
+   z-index: 2;
+   
+}
+.dept:hover{
+   height: 25vh;
+   width:auto;
+   padding:50px;
+   text-align: center;
+   background:white;
+   border-radius: 40px;
+   box-shadow: 4px 4px 17px 8px gainsboro;
+   z-index: 4;
+}
+.dept a{
+   text-decoration: none;
+   color: slategrey;
+}
+.dept h2{
+   font-family: 'Roboto Slab', serif; 
+   font-size: 20px;
+}
+.deptinner{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+#statssection{
+   height: 60vh;
+   width:auto;
+}
+.statsheading{
+   height:10vh;
+   width: auto;
+   text-align: center;
+   font-family: 'Hammersmith One', sans-serif;
+   font-size: 25px;
+   color: rgb(71, 70, 70);
+
+}
+.statsouter{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 10vh;
+   width: auto;
+}
+.statsinner{
+   display: flex;
+   justify-content:space-evenly;
+   align-items: center;
+}
+.stat{
+   padding:0 120px;
+   margin-top: 30vh;
+   justify-content: center;
+   align-items: center;
+}
+.stat h1{
+   color: rgb(61, 58, 58);
+   font-size: 35px;
+   padding-top: 20px;
+   font-family: 'Ubuntu', sans-serif;
+}
+.stat p{
+   font-size: 20px;
+   padding-top: 10px;
+   font-family: 'Ubuntu', sans-serif;
+}
+.statsimage{
+   font-size: 10vh;
+}
+#recruitsection{
+   height: 85vh;
+   background:linear-gradient(to right,lightskyblue,rgb(142, 241, 204));
+   width: auto;
+}
+.recruitouter{
+   justify-content: center;
+   align-items: center;
+}
+.recruitheading{
+   padding-top: 10vh;
+   text-align: center;
+}
+.recruitheading h1{
+   font-size: 35px;
+   font-family: 'Hammersmith One', sans-serif;
+   color: rgb(61, 58, 58);
+}
+.recruitheading p{
+   padding-top: 20px;
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 20px;
+}
+.recruit{
+   padding-top: 49px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-auto-rows: minmax(120px,auto);
+   grid-gap:33px;
+   max-width: 960px;
+   margin:0 auto;
+}
+.recruitimg img{
+  border-radius: 7px;
+}
+footer{
+  height:50vh;
+  width: auto;
+  background: rgb(8, 47, 63);
+}
+
+.contactheading{
+  display: flex;
+  width: auto;
+  justify-content: right;
+  padding-top: 7vh;
+  padding-right: 40vh;
+}
+.contactheadingline{
+  border-bottom-style: solid;
+  border-bottom: paleturquoise;
+}
+.contactheadingline h1{
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  padding-right: 4.3vh;
+}
+.list{
+  display: flex;
+  width: auto;
+  justify-content: right;
+}
+.listicon{
+  display: flex;
+  width: auto;
+  justify-content: right;
+}
+.list-inline{
+  padding-right: 40px;
+}
+.list ul {
+ text-decoration: none;
+ list-style: none;
+}
+.listicon ul{
+ list-style-type: none !important;
+}
+
+.list ul li p{
+ color:darkgray;
+ padding:10px 0;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.list{
+padding-right: 10vh;
+padding-top: 6vh;
+}
+.listicon ul{
+display: flex;
+text-align: right;
+padding-right:40vh ;
+}
+.listicon ul li{
+display: inline-block;
+padding:2.5vh;
+}
